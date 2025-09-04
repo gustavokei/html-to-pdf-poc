@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import * as chromium from '@sparticuz/chromium'
+import chromium from '@sparticuz/chromium'
 import puppeteer from 'puppeteer-core'
 
 /*
@@ -23,9 +23,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const executablePath = await chromium.executablePath()
     browser = await puppeteer.launch({
       args: chromium.args,
-      headless: true,
-      executablePath,
-      defaultViewport: { width: 1280, height: 800 }
+      headless: chromium.headless,
+      defaultViewport: chromium.defaultViewport,
+      executablePath
     })
 
     const page = await browser.newPage()
