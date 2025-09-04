@@ -5,13 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vercel dev",
-    "build": "echo 'Vercel builds serverless functions automatically'",
     "lint": "eslint ."
   },
-  "engines": { "node": "20.x" },
   "dependencies": {
-    "puppeteer-core": "22.13.1",
+    "puppeteer-core": "24.19.0",
     "@sparticuz/chromium": "138.0.2",
-    "@vercel/node": "3.2.17"
+    "@vercel/node": "5.3.20"
   }
 }
