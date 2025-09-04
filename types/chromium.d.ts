@@ -5,8 +5,8 @@ declare module '@sparticuz/chromium' {
   // Default viewport Sparticuz exposes (can be null letting Puppeteer decide)
   export const defaultViewport: { width: number; height: number } | null
 
-  // Headless setting: boolean for classic, 'new' for Chrome's new headless, or 'shell' per library docs
-  export const headless: boolean | 'new' | 'shell'
+  // Headless setting exposed by the library (matches puppeteer-core 22.x expected union)
+  export const headless: boolean | 'shell'
 
   // Resolves to an executable path for the bundled Chromium in the serverless environment
   export function executablePath(): Promise<string>

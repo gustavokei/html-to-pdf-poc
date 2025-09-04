@@ -10,6 +10,6 @@
   "dependencies": {
     "puppeteer-core": "24.19.0",
     "@sparticuz/chromium": "138.0.2",
-    "@vercel/node": "5.3.20"
+    "@vercel/node": "3.2.17"
   }
 }
