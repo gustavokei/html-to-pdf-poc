@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "puppeteer-core": "22.13.1",
-    "@sparticuz/chromium": "124.0.3",
+    "@sparticuz/chromium": "138.0.2",
     "html-pdf-node": "1.0.8",
     "@vercel/node": "3.2.17"
   }
