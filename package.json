@@ -1,0 +1,17 @@
+{
+  "name": "assurant-pdf-service",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Vercel builds serverless functions automatically'",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "puppeteer-core": "22.13.1",
+    "@sparticuz/chromium": "124.0.3",
+    "html-pdf-node": "1.0.8",
+    "@vercel/node": "3.2.17"
+  }
+}
